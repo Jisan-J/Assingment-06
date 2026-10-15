@@ -1,18 +1,27 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+/* *{
+  background: #0C0D10;
+} */
 :root {
-    --primary: #C2F800;
-    --primary-bg: #c2f80015;
-    /*   --secondary: #7c3aed;
+  --primary: #C2F800;
+  --primary-bg: #c2f80015;
+  --body-bg: #0C0D10;
+  --card-bg: #15171D;
+  --card-border: #222630;
+  /*   --secondary: #7c3aed;
   --danger: #dc2626;
   --success: #16a34a; */
 }
 
 @theme {
-    --color-Primary: var(--primary);
-    --color-Primary-bg: var(--primary-bg);
-    /*   --color-secondary: var(--secondary);
+  --color-body-bg: var(--body-bg);
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --color-Primary: var(--primary);
+  --color-Primary-bg: var(--primary-bg);
+  /*   --color-secondary: var(--secondary);
   --color-danger: var(--danger);
   --color-success: var(--success); */
 }
