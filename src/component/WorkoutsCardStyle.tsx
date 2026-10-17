@@ -9,10 +9,10 @@ interface CardPropsType {
     card: CardDataType;
 }
 const WorkoutsCardStyle = ({ card }: CardPropsType) => {
-    const { name, image, muscleGroups, equipment, difficulty, duration, caloriesBurned, sets, reps, rating, description, instructions,
-    } = card;
+    const { name, image, muscleGroups, equipment, duration, caloriesBurned, rating } = card;
 
     return (
+        <Link href={`/${card.id}`}>
         <div className="card bg-card-bg shadow-sm w-full h-[368px]">
             <figure>
                 <Image
@@ -52,6 +52,7 @@ const WorkoutsCardStyle = ({ card }: CardPropsType) => {
 
             </div>  
         </div>
+        </Link>
     );
 };
 
