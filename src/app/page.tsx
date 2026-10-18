@@ -1,5 +1,5 @@
-import HeroSection from '@/component/HeroSection';
-import Workouts from '@/component/Workouts';
+import HeroSection from '@/component/homePage/HeroSection';
+import Workouts from '@/component/homePage/Workouts';
 import { Suspense } from 'react';
 
 

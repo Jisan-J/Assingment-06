@@ -1,22 +1,24 @@
-import { createContext } from 'node:vm';
-import React, { useState } from 'react';
+'use client';
+import {createContext, ReactNode, useState } from 'react';
 
-const WorkContext = createContext();
+export const WorkContext = createContext({});
 
 const WorkoutProvider = ({
-    children,
+    children
 }: {
-    children: React.ReactNode
+    children:ReactNode
 }) => {
     const [plan, setPlan] = useState([]);
-    const [planSaved, setPlanSave] = useState([]);
+    const [save, setSave] = useState([]);
     const shareData={
-        plan, setPlan, planSaved, setPlanSave
+        plan, 
+        setPlan, 
+        save, 
+        setSave
     }
     return (
-        <WorkContext.Provider value={shareData
-            
-        }>{children}</WorkContext.Provider>
+        <WorkContext.Provider value={shareData}>{children}
+        </WorkContext.Provider>
     );
 };
 
