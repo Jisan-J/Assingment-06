@@ -1,7 +1,7 @@
 'use client'
 import { CardDataType } from '@/app/cardType';
 import { WorkContext } from '@/context/WorkoutsContext';
-import React, { Dispatch, SetStateAction, useContext } from 'react';
+import { Dispatch, SetStateAction, useContext } from 'react';
 import { FiBookmark } from 'react-icons/fi';
 
 const SaveButton = ({ card }: { card: CardDataType }) => {
