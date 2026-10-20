@@ -32,7 +32,7 @@ const WorkoutsCardStyle = ({ card }: CardPropsType) => {
                         {name}
                     </h2>
                     <p className='text-gray-400'>{equipment}</p>
-                    <div className="divider my-0"></div>
+                    <div className="divider my-0 before:bg-gray-600 after:bg-gray-600"></div>
                     <div className="card-details flex gap-4 text-gray-400">
                         <div className='flex items-center gap-1'>
                             <IoMdTime />

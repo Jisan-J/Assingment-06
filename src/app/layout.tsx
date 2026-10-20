@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 import WorkoutProvider from "@/context/WorkoutsContext";
+import ToastNotifications from "@/component/shared/ToastNotifications";
+import "react-toastify/dist/ReactToastify.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,15 +27,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-body-bg`}
+      data-theme="light"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased bg-body-bg scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-body-bg">
         <WorkoutProvider>
-  
+        <ToastNotifications />
         <Navbar></Navbar>
         <div>{children}</div>
         <Footer></Footer>
-
         </WorkoutProvider>
       </body>
     </html>

@@ -1,10 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
-
-
 const HeroSection = () => {
-
-
     return (
         <div className='bg-body-bg text-gray-50'>
             <div className="hero bg-card-bg  container mx-auto rounded-2xl border-card-border border-2 lg:h-[448px] ">
@@ -22,8 +17,12 @@ const HeroSection = () => {
                             FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
                             into today&apos;s plan, and watch the week&apos;s work add up.
                         </p>
-                        <Link href={"/"}> <button className="btn bg-Primary shadow-none border-none font-bold text-gray-900">BROWSE WORKOUTS
-                        </button></Link>
+                        <a
+                            href="#workouts"
+                            className="btn bg-Primary shadow-none border-none font-bold text-gray-900"
+                        >
+                            BROWSE WORKOUTS
+                        </a>
                     </div>
                 </div>
             </div>

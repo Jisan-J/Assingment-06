@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Loading = () => {
     return (
@@ -7,11 +6,11 @@ const Loading = () => {
                 <h2 className="font-bold bg-gray-400 w-30 h-5"></h2>
                 <p className=' bg-gray-700 h-3 w-50'></p>
             </div>
-            <div className=" container mx-auto grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 w-full mx-auto">
+            <div className=" container mx-auto grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 w-full ">
                 <div className="card bg-card-bg shadow-sm w-full h-[368px]">
                     <figure>
-                        <div className='w-[395px]
-                    h-[192px] bg-card-bg  flex justify-center items-center'> Loading...
+                        <div className='`w-[395px]
+                    h-[192px]` bg-card-bg  flex justify-center items-center'> Loading...
                         </div>
                     </figure>
                     <div className="card-body">

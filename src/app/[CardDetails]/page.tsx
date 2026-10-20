@@ -96,7 +96,7 @@ export default async function CardDetailsPage({
               ))}
             </ol>
 
-            <div className='flex justify-between w-85 py-10'>
+            <div className='flex justify-between w-85 py-10 *:shadow-none *:border-none'>
                 <PlanButton card={card}></PlanButton>
                 <SaveButton card={card}></SaveButton>
              
